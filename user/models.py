@@ -8,4 +8,4 @@ class User(AbstractUser):
     location = models.CharField(verbose_name="Location", max_length=255, blank=True, null=True)
 
     def __str__(self):
-        return self.username  # Ensures a meaningful string representation
+        return self.username
