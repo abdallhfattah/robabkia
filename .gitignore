@@ -1,0 +1,11 @@
+# virtual environment
+env/
+.env/
+
+# pycache files
+__pycache__/*
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+db.sqlite3
