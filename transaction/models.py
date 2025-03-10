@@ -16,7 +16,7 @@ class Transaction(models.model):
 
 class Feedback(models.model):
     '''Feedback Model with Predefined Rating'''
-    offer = models.ForeignKey('offers.Offer', on_delete=models.CASCADE    
+    offer = models.ForeignKey('offers.Offer', on_delete=models.CASCADE)
     rater = models.ForeignKey('users.User', on_delete=models.CASCADE)
     rating = models.enumeratedField(choices=[(i, i) for i in range(1, 6)])
     comment = models.TextField()
