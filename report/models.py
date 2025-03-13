@@ -6,7 +6,7 @@ from django.contrib.contenttypes.models import ContentType
 class Report(models.Model):
     '''Report Model '''
     
-    reporter = models.ForeignKey('users.User', on_delete=models.CASCADE)
+    reporter = models.ForeignKey('user.Account', on_delete=models.CASCADE)
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     object_id = models.PositiveIntegerField()
     reported = GenericForeignKey('content_type', 'object_id')

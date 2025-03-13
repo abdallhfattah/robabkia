@@ -22,7 +22,9 @@ class Item(models.Model):
         HOME = 'Home'
         SPORTS = 'Sports'
         OTHER = 'Other'
-
+        
+        # TODO: FIX IT MOHAMED :D
+        @classmethod
         def coices(self):
             return [(tag.name, tag.value) for tag in self]
     
